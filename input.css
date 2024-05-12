@@ -317,6 +317,20 @@ margin-top: 0;
   background: #dfab00;
 }
 
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-accent);
+  border: none;
+}
+
+.btn--outline:hover {
+  background: var(--color-accent);
+  color: #fff;
+  border: 2px solid #fff;
+  transition: transform 0.3s;
+}
+
 /* section2 */
 
 .no-padding {
@@ -506,7 +520,7 @@ opacity: .2;
 }
 
 .swiperhorslid .slide_inner {
-  height: 100%;
+  height: 100vh;
   width: 80%;
   margin: 0 0 0 auto;
   background-color: var(--color-body);
@@ -581,15 +595,20 @@ li::after {
   column-count: 2;
 }
 
+.swiper{
+  padding-right: 9rem;
+  margin-top: 5rem;
+}
+
  .swiper-arrow {
   background-color: var(--color-accent);
   width: 60px;
   height: 120px;
   position: absolute;
   bottom: 0;
-  left: calc(20% - 10px);
+  left: calc(20% - 71px);
   z-index: 1;
-  bottom: 9%;
+  bottom: 2%;
 }
 
  .swiper-arrow .swiper-button-next, 
@@ -613,12 +632,22 @@ width: 60px;
   pointer-events: none;
 }
 
+.swiper-button-next.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}
 
 .swiper-arrow .swiper-button-next svg, 
 .swiper-arrow .swiper-button-prev svg {
   transform: rotate(-90deg);
   width: 40%;
 }
+
+.sec3Title{
+  margin-left: 17rem;
+}
+
 
 @media (max-width: 992px) {
   .swiper-arrow {
@@ -635,6 +664,15 @@ width: 60px;
       font-size: 34px;
       line-height: 50px;
   }
+  .sec3Title{
+    margin-left: 0;
+  }
+  .sec3-row .text-justify{
+    margin-left: 0;
+  }
+ .swiper{
+  padding: 0;
+ }
 }
 
 @media (max-width: 576px) {
@@ -659,6 +697,15 @@ width: 60px;
   .swiperhorslid .slide_inner {
     padding: 60px 0;
 }
+.sec3Title{
+  margin-left: 0;
+}
+.sec3Title .text-justify{
+  margin-left: 0;
+}
+.swiper{
+  padding: 0;
+ }
 }
 
 
@@ -681,6 +728,15 @@ width: 60px;
       text-align-last: center;
   }
 
+  .sec3Title{
+    margin-left: 0;
+  }
+  .sec3-row .text-justify{
+    margin-left: 0;
+  }
+  .swiper{
+    padding: 0;
+   }
 }
 
 @media (max-width: 768px) {
@@ -692,4 +748,156 @@ width: 60px;
     line-height: 32px;
     text-align: center;
 }
+.sec3Title{
+  padding: 0 2rem;
 }
+.swiper{
+  padding: 0;
+ }
+}
+
+
+
+/* section4 */
+
+
+.margin-50px-tb {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bg-accent{
+  background-color: var(--color-accent);
+}
+
+.section4{
+  overflow: hidden;
+}
+
+.section4 .sec4bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 0;
+}
+
+.section4 .sec4bg svg {
+  width: 100%;
+}
+
+.section4 .section4-1 {
+  position: relative;
+  z-index: 1;
+  margin-top: 4rem;
+}
+img, svg {
+  vertical-align: middle;
+}
+
+.section4 .sec4bg svg {
+  width: 100%;
+  fill: var(--color-accent); 
+  
+}
+
+
+@media (max-width: 768px) {
+  .sec4bg svg{
+    opacity: .2;
+  }
+  .sec4Text-sm{
+    font-size: 16px;
+  }
+}
+
+
+/* section6 */
+
+.sec6{
+  padding: 5rem 0;
+}
+
+.line-anim {
+    position: relative;
+}
+
+.process-sec .pr_svg {
+    width: 70px;
+    height: 70px;
+    padding: 17px;
+    background: rgba(255 255 255 / 10%);
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--color-accent) ;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.process-sec h3 {
+    width: 90%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.process-sec p {
+    width: 80%;
+}
+
+
+
+
+.line-anim {
+  position: relative;
+}
+
+.line-anim:after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  height: 1px;
+  width: calc(100% - 30px);
+  z-index: -1;
+  background: linear-gradient(90deg, #fe9000 50%, transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 10px 1px;
+  animation: dash 40s linear infinite;
+}
+
+.text-center{
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px){
+ 
+  .process-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.pr_svg {
+    margin-bottom: 10px; 
+}
+}
+
+@media (max-width: 576px) {
+  .line-anim:after {
+      display:none !important;
+  }
+}
+
+
+@keyframes dash {
+  to {
+      background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
+}
+
+
+
+
