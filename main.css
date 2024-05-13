@@ -732,12 +732,24 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-24 {
+  margin-left: 6rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .box-border {
@@ -849,6 +861,10 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink {
@@ -2554,6 +2570,7 @@ body {
   color: var(--color-body);
   margin: 0;
   overflow-x: hidden;
+  background-color: #fdfdfd;
 }
 
 h1, h2, h3 {
@@ -2638,7 +2655,7 @@ ul{
 }
 
 .sec1-formHeader h3{
-  text-align: center
+  text-align: center;
 }
 
 .sec1-form input[type="text"],
@@ -2790,21 +2807,6 @@ input[type="submit"]:hover {
 
 /* buttons */
 
-/* .btn {
-  width: auto;
-  border-radius: 40px;
-  border: 0;
-  cursor: pointer;
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  outline: 0;
-  padding: 2rem 4vw;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-} */
-
 .btn {
   width: auto;
   border-radius: 40px;
@@ -2848,6 +2850,17 @@ input[type="submit"]:hover {
 
 .btn--accent:hover {
   background: #dfab00;
+}
+
+.btn--accentOutline{
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accentOutline:hover{
+  background:#fff ;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
 
 .btn--white {
@@ -2937,6 +2950,10 @@ input[type="submit"]:hover {
   overflow-x: auto;
 }
 
+.icons-sec{
+  margin-top: 5rem;
+}
+
 .sec2-container {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -2949,6 +2966,11 @@ input[type="submit"]:hover {
 
 .recogniz_text{
   font-size: 40px;
+}
+
+.recogniz_text_sec .row {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -2975,6 +2997,11 @@ input[type="submit"]:hover {
   .recogniz_text p {
     display: inline;
     margin-right: 10px;
+  }
+
+  .social_img {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -3591,7 +3618,11 @@ img, svg {
 
 /* Clientle sec */
 
-.row {
+.clienteleSec{
+  margin-top: 5rem;
+}
+
+.clientele-row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -3601,52 +3632,13 @@ img, svg {
   margin-left: calc(-.5* var(--bs-gutter-x));
 }
 
-.row>* {
+.clientele-row>* {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: var(--bs-gutter-y)
-}
-
-.col {
-  flex: 1 0 0%
-}
-
-.row-cols-auto>* {
-  flex: 0 0 auto;
-  width: auto
-}
-
-.row-cols-1>* {
-  flex: 0 0 auto;
-  width: 100%
-}
-
-.row-cols-2>* {
-  flex: 0 0 auto;
-  width: 50%
-}
-
-.row-cols-3>* {
-  flex: 0 0 auto;
-  width: 33.3333333333%
-}
-
-.row-cols-4>* {
-  flex: 0 0 auto;
-  width: 25%
-}
-
-.row-cols-5>* {
-  flex: 0 0 auto;
-  width: 20%
-}
-
-.row-cols-6>* {
-  flex: 0 0 auto;
-  width: 16.6666666667%
 }
 
 .ccf_icon {
@@ -3722,6 +3714,10 @@ img, svg {
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 3rem;
+}
+
+.left-to-right .ccf_icon{
+  margin-left: 14rem;
 }
 
 @keyframes left-to-right{
@@ -3878,6 +3874,56 @@ img, svg {
 
 .te_po svg {
   margin-right: 10px;
+}
+
+/* page2 */
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+.tb-sec tr th:first-child {
+  width: 24%;
+  justify-content: left;
+  font-weight: 600;
+}
+
+.tb-sec tr th {
+  color: var(--color-body);
+  width: calc(19% - 0px);
+  text-align: center;
+  padding: 20px 15px !important;
+  border: none !important;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tb-sec tr td:first-child {
+  width: 24%;
+  justify-content: left;
+  text-align: left;
+  font-weight: 600;
+  background-color: rgba(254, 144, 0, 0.1);
+}
+
+.tb-sec tr th:first-child {
+  width: 24%;
+  justify-content: left;
+  font-weight: 600;
+}
+
+.tb-sec tr td {
+  background-color: transparent;
+  color: var(--color-body);
+  width: calc(19% - 0px);
+  text-align: center;
+  padding: 15px 15px !important;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 @media (min-width: 640px) {
