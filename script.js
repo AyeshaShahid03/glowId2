@@ -19,3 +19,21 @@ const questions = document.querySelectorAll('.question');
       question.classList.toggle('active');
     });
   });
+
+
+  var swiper = new Swiper('.testimonials_slide', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+// Click event for next button
+document.querySelector('.swiper-button-next').addEventListener('click', function () {
+    swiper.slideNext();
+});
+
+// Click event for previous button
+document.querySelector('.swiper-button-prev').addEventListener('click', function () {
+    swiper.slidePrev();
+});
