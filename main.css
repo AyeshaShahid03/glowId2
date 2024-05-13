@@ -720,6 +720,10 @@ video {
   margin-right: auto;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -736,6 +740,10 @@ video {
   margin-left: 6rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -746,10 +754,6 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .box-border {
@@ -863,8 +867,8 @@ video {
   width: weird-and-invalid;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.w-full {
+  width: 100%;
 }
 
 .flex-shrink {
