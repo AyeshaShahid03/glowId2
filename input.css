@@ -97,7 +97,7 @@ ul{
   width: 24px;
   height: 22px;
   color: var(--color-secondary);
-  background: url(./components/images/arrow.svg);
+  background: url(/images/arrow.svg);
   background-repeat: no-repeat;
   background-size: 20px;
 }
@@ -270,7 +270,6 @@ margin-top: 0;
 /* icons */
 
 .icon-container {
-  background: lightcoral;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -385,7 +384,7 @@ margin-top: 0;
 }
 
 .social_icon {
-  background-image: url(./components/images/accredited_by.png);
+  background-image: url(/images/accredited_by.png);
   background-repeat: no-repeat;
   padding: 0;
   display: inline-block; 
@@ -619,7 +618,7 @@ li::after {
  width: 24px;
  height: 22px;
  color: var(--color-secondary);
- background: url(./components/images/arrow.svg);
+ background: url(/images/arrow.svg);
  background-repeat: no-repeat;
  background-size: 20px;
 }
@@ -1119,7 +1118,7 @@ img, svg {
 
 
 .ccf_icon {
-  background-image: url(./components/images/clientele_coverage_files.png);
+  background-image: url(/images/clientele_coverage_files.png);
   background-repeat: no-repeat;
   padding: 0;
   display: block;
@@ -1287,7 +1286,7 @@ img, svg {
     transform-origin: center;
 }
 .testimonials_icon {
-    background-image: url(./components/images/aglo_logo_client.png);
+    background-image: url(/images/aglo_logo_client.png);
     background-repeat: no-repeat;
     padding: 0;
     display: block;
@@ -1405,4 +1404,72 @@ table {
   margin: 0px;
   font-size: 16px;
   font-weight: 400;
+}
+.tb-sec tr {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tb-sec tr th {
+  color: var(--color-body);
+  width: calc(19% - 0px);
+  float: left;
+  text-align: center;
+  padding: 20px 15px !important;
+  border: none !important;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .tb-sec {
+      width: 200% !important;
+  }
+}
+
+@media (max-width: 768px) {
+    .tb-sec {
+        width: 150% !important;
+    }
+    .tb-sec tr {
+      flex-wrap: unset !important;
+  }
+  .options{
+    margin: 0 2rem;
+  }
+}
+
+
+
+.blackbg {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.blackbg .bg-blacksvg_1 {
+  position: absolute;
+  height: 70%;
+  bottom: 0;
+  left: 10%;
+}
+
+.blackbg .bg-blacksvg_2 {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  right: 0%;
+}
+
+.blackbg .bg-blacksvg_3{
+  position: absolute;
+  height: 40%;
+  bottom: 0;
+  right: 0%;
 }
